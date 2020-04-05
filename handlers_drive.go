@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"golang.org/x/net/context"
-	"golang.org/x/oauth2"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -11,9 +9,12 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/petrpulc/gdrive/auth"
-	"github.com/petrpulc/gdrive/cli"
-	"github.com/petrpulc/gdrive/drive"
+	"golang.org/x/net/context"
+	"golang.org/x/oauth2"
+
+	"github.com/khang-hoang/gdrive/auth"
+	"github.com/khang-hoang/gdrive/cli"
+	"github.com/khang-hoang/gdrive/drive"
 )
 
 const ClientId = "367116221053-7n0vf5akeru7on6o2fjinrecpdoe99eg.apps.googleusercontent.com"
